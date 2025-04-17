@@ -34,10 +34,8 @@ h1 {
   font-size: 4.8rem;
   text-align: center;
   background-color: #efac03;
-
   font-size: 8rem;
   font-weight: 400;
-  text-transform: uppercase;
   word-spacing: 1rem;
   letter-spacing: -2px;
   padding: 2.4rem 0;
@@ -67,14 +65,15 @@ input {
   border: none;
   border-radius: 10rem;
   padding: 1.2rem 3.2rem;
-  font-weight: 700;
   font-size: 1.8rem;
-  cursor: pointer;
+  outline-color: #efac03;
 }
 
 .add-form button {
   text-transform: uppercase;
-  background-color: #8ecae6;
+  background-color: #023047;
+  color: #e2e9ed;
+  cursor: pointer;
 }
 
 .list {
