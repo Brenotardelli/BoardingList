@@ -24,9 +24,9 @@ const App = () => {
       <Logo />
       <Form onAddItems={handleItems} />
       <PackingList items={items} handleDeleteItem={handleDeleteItem} handleToggleItem={handleToggleItem} />
-      <Stats />
+      <Stats items={items} />
     </div>
   );
 };
-``
+``;
 export default App;
