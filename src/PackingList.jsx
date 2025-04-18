@@ -6,11 +6,12 @@ const initialItems = [
   { id: 3, description: "Charger", quantity: 1, packed: true },
 ];
 
-const PackingList = () => {
+
+const PackingList = ({ items }) => {
   return (
     <div className="list">
       <ul>
-        {initialItems.map(({ id, description, quantity, packed }) => (
+        {items.map(({ id, description, quantity, packed }) => (
           <li key={id}>
             <span style={packed ? { textDecorationLine: "line-through" } : {}}>
               {quantity} {description}
