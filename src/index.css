@@ -98,13 +98,13 @@ input {
 
 .list ul {
   list-style: none;
-  width: 80%;
-  /* overflow: scroll; */
   display: grid;
+  width: 100%;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.2rem;
-  justify-items: center;
+  gap: 3.2rem;
   align-items: center;
+  justify-items: center;
+  padding: 1.6rem;
 }
 
 .list li {
@@ -188,4 +188,39 @@ input[type="checkbox"] {
 
 .modal-buttons button:last-child {
   background-color: #ccc;
+}
+
+@media (max-width: 750px) {
+  .add-form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  h1 {
+    font-size: 3.8rem;
+  }
+
+  .actions-btn,
+  .actions select {
+    margin-bottom: 1.2rem;
+    width: 100%;
+    text-align: center;
+    display: grid;
+    align-content: center;
+  }
+
+  .list ul {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.6rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .list ul {
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+  }
+
+  .list {
+    overflow-y: scroll;
+  }
 }

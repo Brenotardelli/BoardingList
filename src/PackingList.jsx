@@ -33,7 +33,9 @@ const PackingList = ({ items, handleDeleteItem, handleToggleItem, handleClearLis
           <option value="description">Sort by description</option>
           <option value="packed">Sort by packed status</option>
         </select>
-        <button onClick={() => setIsModalOpen(true)}>Clear list</button>
+        <button className="actions-btn" onClick={() => setIsModalOpen(true)}>
+          Clear list
+        </button>
       </div>
 
       {isModalOpen && (
